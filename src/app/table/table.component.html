@@ -1,0 +1,50 @@
+<app-search (CustomEvent)="SearchData($event)"></app-search>
+<table class="table table-bordered text-center">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Status</th>
+            <th>Species</th>
+            <th>Gender</th>
+            <th>Image</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of TableData | filterPipe:Search">
+            <td>{{item.id}}</td>
+            <td>{{item.name}}</td>
+            <td>{{item.status}}</td>
+            <td>{{item.species}}</td>
+            <td>{{item.gender}}</td>
+            <td><img class="img" [src]="item.image" alt=""></td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- <div class="container" *ngFor="let item of TableData">
+    <div class="row">
+        <div class="col-md-6">
+            
+               
+            </div> 
+            <div class="col-md-6">
+                
+            </div>
+    </div>
+
+    
+       
+        <div class="col-sm-6">
+          <div class="card card1">
+            <div class="card-body">
+                <img [src]="item.image" alt="">
+            </div>
+            <p>{{item.id}}</p>
+            <p> <b> {{item.name}} </b></p>
+            <p>{{item.status}}</p>
+            <p>{{item.species}}</p>
+            <p>{{item.gender}}</p>
+          </div>
+        </div>
+      </div> -->

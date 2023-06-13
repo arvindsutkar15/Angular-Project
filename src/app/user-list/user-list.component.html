@@ -1,0 +1,29 @@
+
+
+
+
+<div class="container">
+
+    <h1 class="text-center m-3">User List(Assignment 2) </h1>
+    <table class="table table-light bordred text-center">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Email</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Avatar</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of UserList">
+                <td>{{item.id}}</td>
+                <td>{{item.email}}</td>
+                <td>{{item.first_name}}</td>
+                <td>{{item.last_name}}</td>
+                <td><img [src]="item.avatar" class="img" alt=""></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
