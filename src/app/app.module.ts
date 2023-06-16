@@ -19,6 +19,8 @@ import { BasicDetailsComponent } from './basic-details/basic-details.component';
 import { AddressComponent } from './address/address.component';
 import { QualificationComponent } from './qualification/qualification.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
+import { DirectiveDemoDirective } from './Custom-Directive/directive-demo.directive';
+import { CustmDiectiveDemoComponent } from './custm-diective-demo/custm-diective-demo.component';
 
 
 @NgModule({
@@ -37,7 +39,9 @@ import { SignUpComponent } from './sign-up/sign-up.component';
     BasicDetailsComponent,
     AddressComponent,
     QualificationComponent,
-    SignUpComponent
+    SignUpComponent,
+    DirectiveDemoDirective,
+    CustmDiectiveDemoComponent
   ],
   imports: [
     BrowserModule,
